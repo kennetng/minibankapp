@@ -60,7 +60,7 @@ public class Kunde {
     public int getKundenummer() {
         return kundenummer;
     }
-45
+
     public String getNavn() {
         return navn;
     }
