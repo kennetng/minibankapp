@@ -1,6 +1,7 @@
 package com.minibank.app;
 
-import com.minibank.app.model.Kunde;
+
+import com.minibank.model.Kunde;
 
 public class Bankapp {
     public static void main(String args[]){

@@ -1,4 +1,4 @@
-package com.minibank.app.model;
+package com.minibank.model;
 
 public abstract class Konto {
     final protected int kontoNummer;

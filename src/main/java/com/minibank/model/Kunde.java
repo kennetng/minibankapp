@@ -1,4 +1,4 @@
-package com.minibank.app.model;
+package com.minibank.model;
 
 
 import java.util.ArrayList;
@@ -46,17 +46,18 @@ public class Kunde {
         vk.setBevilgetBelop(bevilgetBelop);
     }
 
-    public void modifyInnfrielseData(final int konto, final int innfrielseData) throws NullPointerException{
+    public void modifyInnfrielseData(final int konto, final int innfrielseData) throws NullPointerException {
         UtlanKonto uk = (UtlanKonto) kontoListe.stream()
-                .filter(k ->k.getKontoNummer() == konto && k instanceof UtlanKonto)
+                .filter(k -> k.getKontoNummer() == konto && k instanceof UtlanKonto)
                 .findFirst()
                 .orElseThrow(() -> new NullPointerException("No konto found with kontonummer: " + konto));
         uk.setInnfrielsedata(innfrielseData);
     }
 
-    public void deleteKonto(final int konto){
+    public void deleteKonto(final int konto) {
         kontoListe.removeIf(k -> k.getKontoNummer() == konto);
     }
+
     public int getKundenummer() {
         return kundenummer;
     }

@@ -1,6 +1,6 @@
-package com.minibank.app.model;
+package com.minibank.model;
 
-public class UtlanKonto extends Konto{
+public class UtlanKonto extends Konto {
     private int innfrielsedata;
 
     public UtlanKonto(final int kontoNummer, final double saldo, final int innfrielsedata) {

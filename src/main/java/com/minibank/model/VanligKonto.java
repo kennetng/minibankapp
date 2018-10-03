@@ -1,6 +1,6 @@
-package com.minibank.app.model;
+package com.minibank.model;
 
-public class VanligKonto extends Konto{
+public class VanligKonto extends Konto {
     private double bevilgetBelop;
 
     public VanligKonto(final int kontoNummer, final double saldo, final double bevilgetBelop) {
