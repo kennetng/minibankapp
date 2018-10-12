@@ -1,6 +1,10 @@
 package com.minibank.model;
 
+/**
+ * Abstract class that holds two common variables for subclasses
+ */
 public abstract class Konto {
+
     final protected int kontoNummer;
     protected double saldo;
 

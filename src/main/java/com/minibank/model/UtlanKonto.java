@@ -1,11 +1,16 @@
 package com.minibank.model;
 
-public class UtlanKonto extends Konto {
-    private int innfrielsedata;
+import java.sql.Date;
 
-    public UtlanKonto(final int kontoNummer, final double saldo, final int innfrielsedata) {
+/**
+ * A subclass with the variable innfrielsedato
+ */
+public class UtlanKonto extends Konto {
+    private Date innfrielsedato;
+
+    public UtlanKonto(final int kontoNummer, final double saldo, final Date innfrielsedato) {
         super(kontoNummer, saldo);
-        this.innfrielsedata = innfrielsedata;
+        this.innfrielsedato = innfrielsedato;
     }
 
     public int getKontoNummer() {
@@ -20,18 +25,18 @@ public class UtlanKonto extends Konto {
         this.saldo = saldo;
     }
 
-    public int getInnfrielsedata() {
-        return innfrielsedata;
+    public Date getInnfrielsedata() {
+        return innfrielsedato;
     }
 
-    public void setInnfrielsedata(final int innfrielsedata) {
-        this.innfrielsedata = innfrielsedata;
+    public void setInnfrielsedato(Date innfrielsedato) {
+        this.innfrielsedato = innfrielsedato;
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("UtlanKonto{");
-        sb.append("innfrielsedata=").append(innfrielsedata);
+        sb.append("innfrielsedata=").append(innfrielsedato);
         sb.append(", kontoNummer=").append(kontoNummer);
         sb.append(", saldo=").append(saldo);
         sb.append('}');

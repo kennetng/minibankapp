@@ -1,5 +1,8 @@
 package com.minibank.model;
 
+/**
+ * A subclass with the variable bevilgetBelop
+ */
 public class VanligKonto extends Konto {
     private double bevilgetBelop;
 
@@ -28,13 +31,6 @@ public class VanligKonto extends Konto {
         this.bevilgetBelop = bevilgetBelop;
     }
 
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("VanligKonto{");
-        sb.append("bevilgetBelop=").append(bevilgetBelop);
-        sb.append(", kontoNummer=").append(kontoNummer);
-        sb.append(", saldo=").append(saldo);
-        sb.append('}');
-        return sb.toString();
-    }
+
+
 }
